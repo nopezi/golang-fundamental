@@ -12,8 +12,8 @@ import (
 
 func Konek() {
 	// db, err := sql.Open("godror", `user="dev" password="dev" connectString="36.91.39.115:1521/orclpdb1"`)
-	const dsn = `user="DEV"
-				 password="DEV"
+	const dsn = `user="rsnew"
+				 password="rsnew"
 				 connectString="36.91.39.115:1521/xe"`
 	db, err := sql.Open("godror", dsn)
 
@@ -31,7 +31,8 @@ func Konek() {
 		return
 	}
 
-	query := `select id, username from pengguna`
+	// query := `select id, username from pengguna`
+	query := `select * from kunjungan`
 
 	// query := `select sysdate from dual`
 	fmt.Println("query nya ", query)

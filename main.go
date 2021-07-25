@@ -24,5 +24,11 @@ func main() {
 	// belajarbasic.KuisFor("Golang the best language")
 	// belajarbasic.KuisForDua()
 	// belajaroracle.Konek()
-	belajarbasic.ArrayKetiga()
+	// belajarbasic.ArrayKetiga()
+	// belajarbasic.SlicePertama()
+	// belajarbasic.MapKedua()
+	// belajarbasic.MapKetiga()
+	// belajarbasic.MapKeempat()
+	// belajarbasic.SliceMapPertama()
+	belajarbasic.MapQuiz()
 }
