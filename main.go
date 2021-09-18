@@ -1,7 +1,7 @@
 package main
 
 import (
-	belajarbasic "pertama/belajar_basic"
+	belajarbasic "github.com/nopezi/golang-fundamental/belajar_basic"
 )
 
 func main() {
@@ -30,5 +30,11 @@ func main() {
 	// belajarbasic.MapKetiga()
 	// belajarbasic.MapKeempat()
 	// belajarbasic.SliceMapPertama()
-	belajarbasic.MapQuiz()
+	// belajarbasic.MapQuiz()
+	// belajarbasic.DeferPanicRecover(true)
+	// belajarbasic.BelajarStruct()
+	// belajarbasic.BelajarStructMethod()
+	// belajarbasic.BelajarInterface()
+	// belajarbasic.InterfaceKosong()
+	belajarbasic.Nill()
 }

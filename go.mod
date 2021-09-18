@@ -1,4 +1,4 @@
-module pertama
+module github.com/nopezi/golang-fundamental
 
 go 1.16
 
