@@ -23,7 +23,7 @@ func Routers() {
 	route.HandleFunc("/profile", controllers.GetProfile).Methods("get")
 	route.HandleFunc("/profile/update", controllers.UpdateProfile).Methods("put")
 
-	log.Fatal(http.ListenAndServe(":", nil))
+	log.Fatal(http.ListenAndServe("0.0.0.0:", nil))
 	// log.Fatal(http.ListenAndServe("0.0.0.0:8080", route))
 
 }
