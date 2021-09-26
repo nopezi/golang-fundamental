@@ -9,7 +9,7 @@ import (
 )
 
 func Routers() {
-	log.Println("server berjalan di http://127.0.0.1:80")
+	// log.Println("server berjalan di http://127.0.0.1:80")
 	
 	route := mux.NewRouter().StrictSlash(true)
 
@@ -23,7 +23,10 @@ func Routers() {
 	route.HandleFunc("/profile", controllers.GetProfile).Methods("get")
 	route.HandleFunc("/profile/update", controllers.UpdateProfile).Methods("put")
 
-	log.Fatal(http.ListenAndServe("0.0.0.0:", nil))
+	// log.Fatal(http.ListenAndServe("0.0.0.0:", nil))
 	// log.Fatal(http.ListenAndServe("0.0.0.0:8080", route))
+	jalan := http.ListenAndServe("0.0.0.0:80", route)
+	log.Println("server berjalan di ", jalan)
+	log.Fatal(jalan)
 
 }
