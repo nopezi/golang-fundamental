@@ -4,6 +4,7 @@ import (
 	"golang-fundamental/belajar_rest_api/controllers"
 	"log"
 	"net/http"
+	"os"
 
 	"github.com/gorilla/mux"
 )
@@ -25,7 +26,8 @@ func Routers() {
 
 	// log.Fatal(http.ListenAndServe("0.0.0.0:", nil))
 	// log.Fatal(http.ListenAndServe("0.0.0.0:8080", route))
-	jalan := http.ListenAndServe("0.0.0.0:80", route)
+	port := os.Getenv("PORT")
+	jalan := http.ListenAndServe("0.0.0.0:"+port, route)
 	log.Println("server berjalan di ", jalan)
 	log.Fatal(jalan)
 
