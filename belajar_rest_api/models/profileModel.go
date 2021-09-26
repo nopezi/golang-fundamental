@@ -13,7 +13,9 @@ func GetProfile() structs.Profile {
 
 	sql := `SELECT 
 				id, nama_lengkap, tempat_lahir, tanggal_lahir,
-				agama, email, deskripsi
+				agama, email, deskripsi, 
+			CONCAT
+				('http://shielded-beyond-23529.herokuapp.com/gambar/', foto) as url_gambar
 			FROM
 				profil`
 	db.Raw(sql).Scan(&profile)

@@ -8,6 +8,7 @@ type Profile struct {
 	Agama string `json:"agama"`
 	Email string `json:"email"`
 	Deskripsi string `json:"deskripsi"`
+	Url_gambar string `json:"url_gambar"`
 }
 
 type UpdateProfile struct {

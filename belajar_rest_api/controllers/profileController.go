@@ -13,6 +13,9 @@ import (
 )
 
 func GetProfile(w http.ResponseWriter, r *http.Request)  {
+	if !belajarrestapi.Auth(w, r) {
+		return
+	}
 	var res structs.Result
 
 	data := models.GetProfile()

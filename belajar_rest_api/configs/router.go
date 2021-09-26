@@ -27,6 +27,9 @@ func Routers() {
 	// log.Fatal(http.ListenAndServe("0.0.0.0:", nil))
 	// log.Fatal(http.ListenAndServe("0.0.0.0:8080", route))
 	port := os.Getenv("PORT")
+	if port == "" {
+		port = "12345"
+	}
 	jalan := http.ListenAndServe("0.0.0.0:"+port, route)
 	log.Println("server berjalan di ", jalan)
 	log.Fatal(jalan)
