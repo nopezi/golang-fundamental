@@ -1,4 +1,4 @@
-package belajarrestapi
+package configs
 
 import (
 	"fmt"

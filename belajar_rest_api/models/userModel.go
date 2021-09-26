@@ -4,6 +4,7 @@ import (
 	"fmt"
 
 	belajarrestapi "golang-fundamental/belajar_rest_api"
+	// configsdb "golang-fundamental/belajar_rest_api/configs"
 	"golang-fundamental/belajar_rest_api/structs"
 )
 
@@ -16,6 +17,7 @@ func GetUser() []structs.Users {
 	// var users structs.Users
 	users := []structs.Users{}
 	db, err := belajarrestapi.KonekMysql()
+	// db, err := configsdb.KonekMysql()
 
 	if err != nil {
 		fmt.Println("error gan", err)

@@ -3,18 +3,20 @@ package main
 import (
 	// belajarbasic "github.com/nopezi/golang-fundamental/belajar_basic"
 	// "golang-fundamental/belajar_rest_api/models"
-	"golang-fundamental/belajar_rest_api/routers"
+	"golang-fundamental/belajar_rest_api/configs"
+	// "golang-fundamental/belajar_rest_api/routers"
 )
 
 func main() {
 
 	// models.CobaModel()
 	// models.GetUser()
-	routers.Routers()
-	
+	// routers.Routers()
+	configs.Routers()
+
 }
 
-func belajarFundamental()  {
+func belajarFundamental() {
 	// fmt.Println("Halo, belajar golang perkalian beda package")
 
 	// sentence := Tes()

@@ -13,12 +13,3 @@ type Result struct {
 	Message string      `json:"message"`
 	Data    interface{} `json:"data"`
 }
-
-type Posting struct {
-	Id int `json:"id"`
-	Id_kategori int `json:"id_kategori"`
-	Judul string `json:"judul"`
-	Isi string `json:"isi"`
-	gambar string `json:"gambar"`
-	Created_at string `json:"created_at"`
-}
