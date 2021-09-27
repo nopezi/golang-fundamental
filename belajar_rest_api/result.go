@@ -13,6 +13,7 @@ func ResultOk(w http.ResponseWriter, res structs.Result) {
 	}
 
 	w.Header().Set("Access-Control-Allow-Origin", "*")
+	w.Header().Set("Access-Control-Allow-Headers","Content-Type,access-control-allow-origin, access-control-allow-headers")
 	w.Header().Set("Content-Type", "application/json")
 	w.WriteHeader(http.StatusOK)
 	w.Write(hasil)
