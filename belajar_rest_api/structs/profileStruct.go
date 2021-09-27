@@ -7,6 +7,8 @@ type Profile struct {
 	Tanggal_lahir string `json:"tanggal_lahir"`
 	Agama string `json:"agama"`
 	Email string `json:"email"`
+	No_hp string `json:"no_hp"`
+	Hobi string `json:"hobi"`
 	Deskripsi string `json:"deskripsi"`
 	Url_gambar string `json:"url_gambar"`
 }

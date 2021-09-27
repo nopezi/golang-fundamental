@@ -13,7 +13,7 @@ func GetProfile() structs.Profile {
 
 	sql := `SELECT 
 				id, nama_lengkap, tempat_lahir, tanggal_lahir,
-				agama, email, deskripsi, 
+				agama, email, deskripsi, no_hp, hobi,
 			CONCAT
 				('http://shielded-beyond-23529.herokuapp.com/gambar/', foto) as url_gambar
 			FROM
